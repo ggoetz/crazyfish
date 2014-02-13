@@ -1,0 +1,256 @@
+<html>
+<head>
+<title>PeekaDate - find your other half</title>
+<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47707085-1', 'stanford.edu');
+  ga('send', 'pageview');
+
+</script>
+
+<style type="text/css">
+
+body{
+	font-family: 'Yellowtail', cursive;
+}
+
+/* #Peter River Flat Button
+==================================================*/
+.peter-river-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 180px;
+  height: 40px;
+  padding: 0;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #3498db;
+  border: 0;
+  border-bottom: 2px solid #2a8bcc;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2a8bcc;
+  box-shadow: inset 0 -2px #2a8bcc;
+}
+.peter-river-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* #Nephritis Flat Button
+==================================================*/
+.nephritis-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 120px;
+  height: 40px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #27ae60;
+  border: 0;
+  border-bottom: 2px solid #219d55;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #219d55;
+  box-shadow: inset 0 -2px #219d55;
+}
+.nephritis-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+/* #purchase Flat Button
+==================================================*/
+.purchase-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 300px;
+  height: 40px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #27ae60;
+  border: 0;
+  border-bottom: 2px solid #219d55;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #219d55;
+  box-shadow: inset 0 -2px #219d55;
+}
+.purchase-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* #Orange Flat Button
+==================================================*/
+.orange-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 120px;
+  height: 40px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #f39c12;
+  border: 0;
+  border-bottom: 2px solid #e8930c;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #e8930c;
+  box-shadow: inset 0 -2px #e8930c;
+}
+.orange-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.status
+{
+padding:10px 40px;
+background:#c39719;
+width:200px;
+border-radius:25px;
+font-family: helvetica;
+font-size: 15px;
+color: white;
+}
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 160px;
+    padding: 16px;
+    border: 2px solid silver;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+
+</style>
+
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/jquery_cookie.js"></script>
+    <script src="js/peekadate.js"></script>
+
+</head>
+<body>
+
+<center>
+
+<div id="light" class="white_content" style="font-family: Dosis; display: none;">
+<div align="right"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color: silver; text-decoration: none;">Close</a>
+</div>
+  <font size="6"><b>Out of unblurs for today!</b></font>
+<P>
+<input type="submit" value="Buy 10 unblurs for $0.99" class="purchase-flat-button" onclick="window.location = 'pay.html'">
+<P>
+<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color: silver; text-decoration: none;">I want to continue browsing blurred profiles. </a>
+
+
+</div>
+<div id="fade" class="black_overlay" style="display: none;">
+
+</div>
+
+<div style="font-size:90px"><b>PeekaDate</b></div>
+<div style="font-size:30px">Find your other half</div>
+
+<div id="container" style="position:relative; align="center">
+
+  <div style="position: relative; top: 20px;">
+    <input type="submit" value="Pass" class="orange-flat-button" onclick="window.location = 'match13.html'"> &nbsp;&nbsp;&nbsp;
+      <input type="submit" value="Like" class="nephritis-flat-button" onclick="window.location = 'match13.html'">
+   </div>
+  <img src="img/match13-blur.png" class="profile-pic">
+
+  <div style="position: relative; top: -20px;">
+    <input type="submit" value="Unblur Photo" class="peter-river-flat-button unblur-button">
+  </div>
+  <div class="status"> You have 5 unblurs left </div>
+<br/>
+<div style="font-family: Dosis" align="center">
+
+<div id="content" style="width: 364px; text-align: left;">
+  <table width="100%""><tr>
+    <td>
+  <font size="5"><b>CharlesFR     </font>
+  </td><td align="right">
+    <font size="5">23, SF Bay Area</font></b>
+  </td></tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>
+      <img src="img/ed.png">
+    </td><td>
+      &nbsp;Works at GoPro
+    </td></tr>
+    <tr><td>
+    <img src="img/work.png">
+    </td><td>
+     &nbsp;Studied at University of Texas 
+    </td>
+  </tr>
+</table>
+<p>
+<font size="4"><b>Things about me<br/></b></font>
+#LifeWithMeaning  #ArtFan #FrenchAccent
+<p>
+<font size="4"><b>Conversation starters<br/></b></font>
+Are you a saver or a spender? 
+
+</div>
+
+</div>
+
+</div>
+</p>
+
+</center>
+
+<script src="./js/peekadate.js"></script>
+
+</body>
+</html>
