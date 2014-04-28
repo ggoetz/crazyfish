@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>PeekaDate - find your other half</title>
+<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47707085-1', 'stanford.edu');
+  ga('send', 'pageview');
+
+</script>
+
+<style type="text/css">
+
+body{
+	font-family: 'Yellowtail', cursive;
+}
+
+/* #Peter River Flat Button
+==================================================*/
+.peter-river-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 300px;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #3498db;
+  border: 0;
+  border-bottom: 2px solid #2a8bcc;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2a8bcc;
+  box-shadow: inset 0 -2px #2a8bcc;
+}
+.peter-river-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 300px;
+    padding: 16px;
+    border: 2px solid silver;
+    background-color: white;
+    z-index:2001;
+}
+
+</style>
+
+</head>
+<body>
+
+<center>
+
+<div id="light" class="white_content" style="font-family: Dosis; display: none;">
+<div align="right"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color: silver; text-decoration: none;">Close</a>
+</div>
+<div align="left">
+  <font size="6"><b>Beauty should be more than skin-deep</b></font>
+<P>
+
+The online dating experience hasn't changed much since the 90's and it's time to disrupt it. 
+<p>
+At PeekaDate, we believe beauty is more than just skin-deep. Each time you login, we'll hand-pick profiles of singles around your area, with a catch - the photos are blurred. We hope this will get everyone to read the profiles, and if someone really piques your interest, you can choose to unblur them, or just like them and let fate run its course! 
+<p>
+We hope we can put some fun, serendipity and romance back to online dating. 
+<p>
+PeekaDate is founded by a few grad students in the heart of Silicon Valley. 
+</div>
+  <p>
+
+</div>
+
+<div id="fade" class="black_overlay" style="display: none;">
+
+</div>
+
+<div style="font-size:90px"><b>PeekaDate</b></div>
+<div style="font-size:30px">Find your other half</div>
+
+<img src="img/demo.png">
+
+<p><input type="submit" value="Login with Facebook" class="peter-river-flat-button" onClick="window.location = 'match.html'">
+<br/>
+<font style="color: silver; text-decoration: none; font-family: Dosis;" size="2">We won't post anything on your Facebook page.</font>
+</p>		
+<br/>
+<a href="#" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';" style="color: silver; text-decoration: none; font-family: Dosis;">about us</a>
+
+</center>
+</body>
+</html>
